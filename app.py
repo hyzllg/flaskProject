@@ -15,6 +15,7 @@ def login():
 
 @app.route('/index/',methods=['GET','POST'])
 def index():
+    print(request.method)
     #判断请求方式
     if request.method == 'GET':
         print(request.args)
